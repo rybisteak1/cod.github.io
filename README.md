@@ -1,8 +1,4 @@
-# ESE 3500 Final Project (Team COD)
-
-Dylan Li, Oscar Qu, Cynthia Yang
-
-## Project: Self-Balancing Robot
+# Project: Self-Balancing Robot
 
 ### Pictures!
 
