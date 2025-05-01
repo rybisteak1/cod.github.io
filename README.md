@@ -24,7 +24,7 @@ Serial monitor snapshot of angle readings and motor power derived from PID loop.
 #### SRS 2 Validation
 
 <video controls width="640">
-  <source src="myvideo.mp4" type="video/mp4">
+  <source src="COD_SRS2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
