@@ -1,3 +1,5 @@
+# COD--ESE 3500 Final Project
+
 ## Goal
 
 Our goal was to build a Self Balancing Robot using PID control.
