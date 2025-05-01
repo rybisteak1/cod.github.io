@@ -9,6 +9,8 @@ Our goal was to build a Self Balancing Robot using PID control.
   Your browser does not support the video tag.
 </video>
 
+https://drive.google.com/file/d/1j4oF2RF1gNrmKTKE_TD8yV22seSZAY1A/view?usp=sharing
+
 ## Pictures!
 
 | ![1746063767191](image/README/1746063767191.png) | ![1746063788230](image/README/1746063788230.png) |
@@ -36,6 +38,8 @@ Serial monitor snapshot of angle readings and motor power derived from PID loop.
   <source src="COD_SRS2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+https://drive.google.com/file/d/1sBtBPzMcQdFjIWptJwjKo2hV8Ke32LXs/view
 
 ## HRS Validation
 
