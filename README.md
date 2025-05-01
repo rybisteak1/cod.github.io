@@ -1,12 +1,21 @@
-# Project: Self-Balancing Robot
+## Goal
 
-### Pictures!
+Our goal was to build a Self Balancing Robot using PID control.
+
+## Video Demo
+
+<video controls width="640">
+  <source src="COD_FINAL_DEMO.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+## Pictures!
 
 | ![1746063767191](image/README/1746063767191.png) | ![1746063788230](image/README/1746063788230.png) |
 | ---------------------------------------------- | ---------------------------------------------- |
 | ![1746063810835](image/README/1746063810835.png) | ![1746063830784](image/README/1746063830784.png) |
 
-### SRS Validation
+## SRS Validation
 
 |                 | Description                                                                                                                                                                                                                                                                                                                                                                   | Met? |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
@@ -15,20 +24,20 @@
 | **SRS 3** | SRS3 was met. We used a motor controller to control the movements of 2 DC motors through outputting PWM signals from the MCU. We were able to test this functionality using our motortest.c file by configuring it to write different speeds to the DC motor and seeing how it responds.                                                                                      | Yes! |
 | **SRS 4** | SRS4 was met. We configured a PID control loop which required us to use timers and interrupts, in addition to other calculations. The success of this implementation was tested by seeing if our feedback loop was able to spin the wheels properly according to the IMU input, which we verified successfully.                                                               | Yes! |
 
-#### SRS 1 Validation
+### SRS 1 Validation
 
 ![1746065875371](image/README/1746065875371.png)
 
 Serial monitor snapshot of angle readings and motor power derived from PID loop.
 
-#### SRS 2 Validation
+### SRS 2 Validation
 
 <video controls width="640">
   <source src="COD_SRS2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-### HRS Validation
+## HRS Validation
 
 |                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Met? |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
@@ -38,13 +47,21 @@ Serial monitor snapshot of angle readings and motor power derived from PID loop.
 | **HRS 4** | HRS4 was met. We were able to accurately vary the speed of the motors by sending PWM signals to the motor drivers and using that to drive the motors. As we tilted the robot to different degrees, it would request different amounts of power (between 0 to 255), and we could visually see the speed of the motor continuously changing, demonstrating how it was working correctly.                                                                                                                                                     | Yes! |
 | **HRS 5** | HRS5 was met. Our boost converters were able to step up the battery voltage of 3.2V to 5V to power our peripherals, including our ATmega and motor driver. The isolation of the motor driver and ATmega was essential for protecting the signal integrity of the I2C signals being sent between the IMU and the MCU. We verified this by measuring the voltage output of the boost converter and also seeing that our components were performing as expected by receiving enough power.                                                    | Yes! |
 
-#### HRS 4 Validation
+### HRS 4 Validation
 
-#### HRS 5 Validation
+![1746066454025](image/README/1746066454025.png)
 
-### Conclusion/Reflection
+PWM Readings from Motor
 
-Overall, we felt that our project was mostly a success. Throughout this project, we learned about the intricacies of control algorithms and the nuances of implementing a PID algorithm to attempt to balance a robot on two wheels. More specifically, we learned about all the different aspects that feed into a control algorithm and cause potential problems. Issues (which we encountered) may stem from inaccurate serial communication between devices, too slow sampling rates, inconsistent motor driving, and hardware/assembly issues such as faulty connections or an unbalanced robot. To have a perfectly functioning control system, all parts must be on the same page with little to no errors anywhere along the project. We also learned a lot about making adjustments on the fly and the integration process of adding different peripherals to all work together. More technically, we learned about implementing a PID algorithm while working with MCUs, interrupts, multiple timers, receiving input from an MCU, and writing outputs to a motor driver. 
+### HRS 5 Validation
+
+![1746066577643](image/README/1746066577643.png)
+
+Boost Converter Working!
+
+## Conclusion/Reflection
+
+Overall, we felt that our project was mostly a success. Throughout this project, we learned about the intricacies of control algorithms and the nuances of implementing a PID algorithm to attempt to balance a robot on two wheels. More specifically, we learned about all the different aspects that feed into a control algorithm and cause potential problems. Issues (which we encountered) may stem from inaccurate serial communication between devices, too slow sampling rates, inconsistent motor driving, and hardware/assembly issues such as faulty connections or an unbalanced robot. To have a perfectly functioning control system, all parts must be on the same page with little to no errors anywhere along the project. We also learned a lot about making adjustments on the fly and the integration process of adding different peripherals to all work together. More technically, we learned about implementing a PID algorithm while working with MCUs, interrupts, multiple timers, receiving input from an MCU, and writing outputs to a motor driver.
 
 The process steps we took, from the beginning of the project to end, were successful. We were able to successfully get the individual elements of our project, outlined by our HRS and SRS’s, working, and the mechanical integration of our project also came together well. On the software side, we overcame a lot of challenges we faced in the process of writing our I2C and IMU libraries, as well as in the struggle to increase the responsiveness of our motors to the IMU readings.
 
