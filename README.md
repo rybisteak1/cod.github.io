@@ -15,4 +15,18 @@ Dylan Li, Oscar Qu, Cynthia Yang
 | **SRS 3** |             | Yes! |                                                                           |
 | **SRS 4** |             | Yes! |                                                                           |
 
+#### SRS # Validation
+
+#### SRS # Validation
+
 ### HRS Validation
+
+|                 | Description | Met? | Problems Encountered |
+| --------------- | ----------- | ---- | -------------------- |
+| **HRS 1** |             | Yes! |                      |
+| **HRS 2** |             | Yes! |                      |
+| **HRS 3** |             | Yes! |                      |
+| **HRS 4** |             | Yes! |                      |
+| **HRS 5** |             | Yes! |                      |
+
+### Conclusion/Reflection
